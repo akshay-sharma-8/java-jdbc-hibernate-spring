@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     </body>
-        <h2>Telusko Calculator</h2>
+        <h2>Akshay Calculator</h2>
 
          <form action="add">
                 <label for="num1">Enter 1st Number :</label>
