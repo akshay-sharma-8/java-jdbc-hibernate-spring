@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.AkshaySharma008.java</groupId>
+    <artifactId>MavenDemo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.1.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.2.7.Final</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+
+<!--    The main job of GAV (GroupId, ArtifactId, Version) -->
+<!--    is to uniquely identify and locate a specific artifact (JAR, WAR, etc.) -->
+<!--    in Maven repositories so Maven can download and use it in your project.-->
+
+<!--    (G) GroupId-->
+<!--    Represents the organization, company, or group that created the project.-->
+<!--    Example: org.springframework-->
+
+<!--    (A) ArtifactId-->
+<!--    The name of the project/module.-->
+<!--    Example: spring-core-->
+<!--    (V) Version-->
+<!--    The specific version of the artifact you want.-->
+
+<!--    Example: 6.1.2 (stable) or 1.0.0-SNAPSHOT (development).-->
+
+</project>

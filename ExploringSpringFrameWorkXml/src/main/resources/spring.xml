@@ -1,0 +1,91 @@
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--by default the scope is singleton-->
+<!--singleton creat object one time -->
+<!--<bean id="alien" class="com.example.Alien" scope="singleton">-->
+
+<!--</bean>-->
+
+
+<!--    prototype creat object many time when get.bean() call the object -->
+<!--    <bean id="alien" class="com.example.Alien" scope="prototype">-->
+
+<!--    </bean>-->
+
+
+    <bean id="alien" class="com.example.Alien" autowire="byType">
+
+
+
+
+
+<!--        autowrie are of two type byName, byType-->
+<!--        byName → Matches property name with bean id.-->
+<!--        byType → Matches property type with bean class.-->
+
+
+<!--        <property name="age" value="21">-->
+
+<!--      This is Use to set values of datatype that are defined in class ,
+           also work with setter -->
+<!--        </property>-->
+
+<!--        <property name="lap1" ref="lap">-->
+<!--     'ref' injects the reference of another bean (id="lap") -->
+<!--         into this property using the setter method    -->
+<!--        </property>-->
+
+<!--        <constructor-arg value="20"/>-->
+<!--        <constructor-arg ref="lap">-->
+<!--        </constructor-arg>-->
+
+
+<!--        <constructor-arg type="int" value="20" />-->
+<!--        <constructor-arg type="com.example.Laptop" ref="lap" />-->
+
+
+<!--        <constructor-arg index="0" value="20" />-->
+<!--        <constructor-arg index="1" ref="lap" />-->
+
+
+<!--        <constructor-arg  name="lap1" ref="lap" />-->
+<!--        <constructor-arg name="age" value="20" />-->
+
+        <property name="age" value="45">
+
+        </property>
+<!--        <property name="com" ref="lap">-->
+
+<!--        </property>-->
+<!--        Defining a property has more power and runs first compared to using autowire-->
+
+
+
+<!--        <property name="age" value="21"/>-->
+        <!--<property name="com" ref="com2"/>   -->
+<!--        <property name="com" >-->
+            <!-- Inner Bean -->
+<!--            this only use by Alien class-->
+<!--            <bean id="com1" class="com.telusko.Laptop" primary="true">-->
+<!--            </bean>-->
+<!--        </property>-->
+
+    </bean>
+    <bean id="com" class="com.example.Laptop" primary="true">
+
+<!--        primary="true" means give this bean first priority when multiple candidates exist.-->
+
+    </bean>
+    <bean id="Desk" class="com.example.Desktop"   lazy-init="true">
+<!--        lazy-init Desktop object will not be created at startup.
+            It will be created only when needed. and scope is singleton -->
+
+    </bean>
+
+</beans>
