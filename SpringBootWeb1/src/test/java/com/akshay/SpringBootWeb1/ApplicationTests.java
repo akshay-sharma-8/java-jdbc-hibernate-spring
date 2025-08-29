@@ -1,4 +1,4 @@
-package com.telusko.SpringBootWeb1;
+package com.akshay.SpringBootWeb1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
