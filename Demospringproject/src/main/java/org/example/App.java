@@ -8,6 +8,6 @@ import sun.management.jdp.JdpController;
 public class App {
     public static void main(String[] args) {
         JdpController.JDPControllerRunner SpringApplication;
-        SpringApplication.run(App.class, args);git
+        SpringApplication.run(App.class, args);
     }
 }
