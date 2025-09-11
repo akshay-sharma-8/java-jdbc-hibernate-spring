@@ -23,7 +23,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
 	<div class="container">
-		<a class="navbar-brand fs-1 fw-medium" href="#">Telusko Job Portal Web App</a>
+		<a class="navbar-brand fs-1 fw-medium" href="#">Alien Job Portal Web App</a>
 		<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false"
@@ -35,7 +35,7 @@
 			<ul class="navbar-nav ms-auto">
 				<li class="nav-item"><a class="nav-link" href="home">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="viewalljobs">All Jobs</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://telusko.com/">Contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://github.com/akshay-sharma-8">Contact</a></li>
 			</ul>
 		</div>
 	</div>
