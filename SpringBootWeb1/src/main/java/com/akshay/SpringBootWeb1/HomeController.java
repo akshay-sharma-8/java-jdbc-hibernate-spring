@@ -94,3 +94,8 @@ public class HomeController {
 //        |
 //        v
 //Response back to user
+
+
+
+//@RequestParam → fetch data from query string
+//RequestParam → optional query parameters (/jobPost?id=101)

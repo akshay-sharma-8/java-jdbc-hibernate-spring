@@ -1,12 +1,12 @@
-package com.akshay.JobApp.model;
+package com.example.Spring_boot_rest.model;
 
 
-import java.util.List;
-
-import org.springframework.stereotype.Component;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -20,5 +20,6 @@ public class JobPost {
 	private String postDesc;
 	private Integer reqExperience;
 	private List<String> postTechStack;
+
 
 }

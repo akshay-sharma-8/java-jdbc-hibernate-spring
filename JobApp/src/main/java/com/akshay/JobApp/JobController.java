@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import java.util.List;
 
 
+// POST --> Create data
+// GET --> Read data
+// PUT --> Update data
+// Delete --> Delete data
+
+
 @Controller
 
 public class JobController {
