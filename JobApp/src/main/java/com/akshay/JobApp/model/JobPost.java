@@ -22,3 +22,7 @@ public class JobPost {
 	private List<String> postTechStack;
 
 }
+
+//@Component is used to create and manage objects (beans) in Spring’s IoC(Inversion of Control) container.
+//Spring automatically scans, creates, and injects these beans
+//so developers don’t have to manually manage object creation.
