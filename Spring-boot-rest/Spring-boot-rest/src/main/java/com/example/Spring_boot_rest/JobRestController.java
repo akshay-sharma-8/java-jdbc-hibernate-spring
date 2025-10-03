@@ -11,16 +11,16 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
-//@CrossOrigin tells Spring Boot:
-//        “allow browsers to accept calls from another website (different domain/port).”
 
+//@CrossOrigin is used in Spring Boot to allow requests from a different origin (domain/port/protocol).
+//It solves browser CORS restrictions for frontend-backend communication
 public class JobRestController {
 
     @Autowired
     private JobService service;
 
 
-    @GetMapping(path="jobPosts", produces = {"application/xml"})
+    @GetMapping(path="jobPosts", produces = {"application/json"})
     //@ResponseBody // use with @Controller
    // @ResponseBody tells Spring “don’t look for an HTML page,
     // just send this object back as the HTTP response (usually JSON)”.
@@ -28,11 +28,15 @@ public class JobRestController {
         return service.getalljobs();
     }
 
-    @GetMapping("jobPost/{postId}")
+    @GetMapping("jobPosts/{postId}")
     public JobPost getJob(@PathVariable("postId") int postId){
      return service.getJob(postId);
     }
 
+    @GetMapping("jobPosts/keyword/{keyword}")
+    public List<JobPost> findbykeyword(@PathVariable("keyword") String keyword){
+        return  service.findbykeyword(keyword);
+    }
 
 //    @PostMapping("jobPost")
 //    public void addJob(@RequestBody JobPost jobPost){
@@ -59,9 +63,23 @@ public class JobRestController {
 
 
 
+    @GetMapping("load")
+   public String load(){
+        service.load();
+        return "success";
+   }
+
 }
 
 //@PathVariable → identity of the resource (like user ID).
 //Tells Spring to fetch the value of postId from the URL.
 //PathVariable → mandatory part of the URL (/jobPost/101)
 
+
+//
+//@RestController is just a convenience annotation that combines
+//@Controller and @ResponseBody, mainly used for building RESTful web services,
+//while @Controller is for traditional MVC apps where you return views.
+
+
+//Representational State Transfer(REST)
