@@ -1,4 +1,4 @@
-package com.example.Spring_boot_rest.sevice;
+package com.example.Spring_boot_rest.service;
 
 
 
@@ -25,6 +25,7 @@ public class JobService {
     }
 
     public List<JobPost> getalljobs(){
+
        return  repo.findAll();
     }
 

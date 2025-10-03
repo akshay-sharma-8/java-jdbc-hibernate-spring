@@ -2,9 +2,8 @@ package com.example.Spring_boot_rest;
 
 
 import com.example.Spring_boot_rest.model.JobPost;
-import com.example.Spring_boot_rest.sevice.JobService;
+import com.example.Spring_boot_rest.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
